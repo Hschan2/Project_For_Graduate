@@ -1,0 +1,287 @@
+/* 
+	project:  small corporation
+	author:   luka cvrk (www.solucija.com) 
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+*{ margin: 0; padding: 0; }* 
+
+body {
+	font: .75em "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	background: #fff;
+	color: #444;
+}
+
+
+a {	color: #000000;	background: inherit; text-decoration: none; }
+a:hover { color: #8C8C8C; background: inherit; text-decoration: none; }
+p { margin: 0 0 15px 0; }
+h1 {  margin: 20px 0 0; }
+h1 a { background: inherit; }
+img { border: 0; }
+h2 { font: normal 1.6em "Trebuchet MS", Arial, Sans-Serif; margin: 0 0 12px; }
+h3 a { font-size: 1em; }
+#main h3 a { font-size: .84em; color: #808080; font-weight: normal; text-transform: uppercase; }
+
+#content { width: 940px; margin: 0 auto; padding: 20px 0 0 0; border-top: 5px solid #eee; }
+
+#top{ float: right; text-align: right;  }
+#top a { color: #808080; margin: 0 0 0 13px; background: #fff url(images/toparrow.png) no-repeat center left; padding: 0 0 0 12px; }
+input.searchfield { width: 200px; padding: 6px; border: 2px solid #ccc; font-size: .9em; }
+input.searchbutton { background: #289BFF; border: 0; padding: 6px; color: #000000; font-weight: bold; font-size: .9em; cursor:pointer; }
+input.loginfield { width: 170px; padding: 4px; spacing : 2px; border: 2px solid #ccc; font-size: .9em; }
+input.loginbutton { width: 180px;background-image: url('images/loginbtn.jpg'); background: #289BFF; border: 0; padding: 6px; color: #000000; font-weight: bold; font-size: .9em; cursor:pointer; }
+input.titlefield { width: 550px; padding: 4px; spacing : 2px; border: 2px solid #ccc; font-size: .9em; }
+input.regbutton { width: 100px; height: 40px; background: #8C8C8C; border: 0; padding: 6px; color: #FFFFFF; font-weight: bold; font-size: 1em; cursor:pointer; }
+input.freebutton { width: 50px; height: 30px; background: #8C8C8C; border: 0; padding: 6px; color: #FFFFFF; font-weight: bold; font-size: 1em; cursor:pointer; }
+input.shortfield { width: 120px; padding: 4px; spacing : 2px; border: 2px solid #ccc; font-size: .9em; }
+input.agefield { width: 50px; padding: 4px; spacing : 2px; border: 2px solid #ccc; font-size: .9em; }
+
+#logo { float: left; color: #808080; line-height: 25px; }
+#search { text-align : center; clear : both; }
+#menu { font-family: 'Nanum Brush Script', serif;height: 55px; padding: 7px 0 0 0; clear: both;  margin: 0 0 18px; background: #fff repeat-x; text-align : center; }
+	#menu li { font-size: 1.2em; display: inline; text-transform: uppercase; background : #B2CCFF;}
+	#menu li a { margin: 0 25px 0 10px; color: #808080;  }
+	#menu li a:hover { color: #444; }
+
+#left { background: #fff;  clear: left; float: left; width: 600px; height : 130px; padding: 10px 15px; margin: 0 0 20px; }
+	#left img { margin: 0 0 8px; }
+	#left li { list-style: none; }
+	#left li a {  color: #787A8F; font-weight: bold; background: url(images/arrow.gif) no-repeat center left; padding: 0 0 0 12px; }
+
+#left2 { background: #ffffff;  clear: left; float: left; width: 80px; height : 100px; padding: 10px 15px; margin: 0 0 20px; }
+
+#main { float: left; width: 655px; margin: 0 0 20px; }
+	#main img { float: left; border: 3px solid #eee; padding: 1px; margin: 0 15px 5px 0; }
+	#line { clear: both; padding: 3px; margin: 0 0 15px; background: #fff url(images/smalldot.gif) repeat-x; }
+	#ad { float: right; text-align: center; padding: 25px 0 0; width: 250px; border: 3px solid #8C8C8C; color: #ccc; height: 120px; margin: 0 0 10px; }
+	#ld { float: right; text-align : left; width : 250px; height: 60px; }
+	#shortnews { float: right; width: 250px; }
+	.news { border-bottom: 1px solid #eee; padding: 0 0 2px; margin: 0 0 10px;}
+	
+#right { margin: 0 15px 20px 0; padding: 0 0 0 15px; float: right; width: 620px; text-align: justify; }
+.border { clear: both; border-left: 4px solid #ccc; padding: 0 0 0 15px; }
+
+#empty { height : 180px; background : #FFFFFF; }
+#miniblank { height : 10px; background : #FFFFFF; }
+#loginblank { height : 2px; background : #FFFFFF; }
+#blank { height : 100px; background : #FFFFFF; }
+#boardline { width : 600px; padding: 1px; margin: 0 0 15px; background: #4C4C4C; text-align : left; }
+#rightbanner { background: #fff;  clear: right; float: right; width: 200px; height : 550px; padding: 10px 30px; margin: 0 0 30px; }
+#rightbanner2 { background: #fff;  clear: right; float: right; width: 200px; height : 40px; padding: 10px 45px; margin: 0 0 30px; }
+
+.row div{    border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+	font-family: 'Nanum Brush Script', serif;
+            
+                        
+            background-color: #B2CCFF;
+        }
+        @media (min-width: @screen-sm-min) { 750px }
+        @media (min-width: @screen-md-min) { 970px }
+        @media (min-width: @screen-lg-min) { 1170px }
+        
+        #nav{   border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+
+        font-family: 'Nanum Brush Script', serif;
+            list-style-type: none; 
+            height: 45px; 
+            padding: 6px 7px; 
+            margin: 0; 
+            background: #289BFF; 
+        }        
+        #nav li{ 
+          border-top-left-radius:50px;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+        font-family: 'Nanum Brush Script', serif;
+            float: left;
+            position: relative;
+            margin: 5px 68px;
+            padding: 0; 
+        }        
+        #nav li a { 
+       
+            display: block; 
+           font-family: 'Nanum Brush Script', serif;
+            font-weight: 600;
+            font-size: 15pt;
+            padding: 10px 20px;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 1.4em;
+        }        
+        #nav li:hover > a{  
+            background: #B2CCFF; 
+            color: #444;
+            text-shadow: 0 1px 1px rgba(255,255,255,1); 
+            border-radius: 1.4em; 
+        }        
+        #nav ul{ 
+            margin: 0;
+            padding: 0;
+            list-style: none; 
+            position: absolute;
+            left: 0; 
+            top: 36px; 
+            width: 110px; 
+            background: #B2CCFF; 
+            border: 0px solid #b4b4b4; 
+            border-radius: 8px; 
+            opacity: 0;  
+        }        
+        #nav ul li{
+            float : none;
+            margin: 0;
+            padding: 0;
+            height: 0; 
+            overflow: hidden;  
+        }        
+        #nav ul a{ 
+            font-weight: normal;  
+            color: #333; 
+        }        
+        #nav ul li:hover > a { 
+            background: #0078ff;
+            color: #fff; 
+            border-radius: 0; 
+        }        
+        #nav ul li:first-child > a{
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }        
+        #nav ul li:last-child > a{ 
+            border-bottom-left-radius: 8px; 
+            border-bottom-right-radius: 8px; 
+        }                
+        #nav li:hover ul{  
+            opacity: 1;  
+        }        
+        #nav li:hover ul li{ 
+            height: 35px; 
+            overflow: visible; 
+            padding: 0; 
+        }
+
+table.main {
+    font-family: 'Hanna', serif;
+    font-size: 15pt;
+}
+
+
+table.one {							 
+	margin-bottom: 2em;	
+	border-collapse:collapse;
+	display: inline-block;
+		}	
+
+	
+	table.one td {								
+	text-align: center;     
+	width: 10em;					
+	padding: 1em;
+	border-bottom:1px solid #ccc; 		}		
+
+
+	table.one th {	
+	font-family: 'Nanum Gothic', serif;							
+	text-align: center;					
+	background-color: #494949;		
+	font-weight: bold;	
+	color: #fff;		}			      
+
+	table.one tr {	
+	height: 1em;	}
+
+      table.one tr a:hover {
+        text-decoration:  underline;
+      }
+
+	table.one tr:nth-child(even) {			
+    	background-color: #eee;		}
+
+	table.one tr:nth-child(odd) {			
+	background-color:#fff;		}
+	
+	table.two {									 
+	margin-bottom: 3em;	
+	border-collapse:collapse;
+	display: inline-block;
+}	
+
+	
+	table.two td {								
+	text-align: left;     
+	width: 100em;					
+	padding: 1em; 
+	border-bottom:1px solid #ccc;
+      font-size: 10pt;
+}		
+
+
+table.two th {		
+     font-family: 'Nanum Gothic', serif;
+      width: 20em;
+	text-align: center;					
+	padding: 1em;
+	background-color: #ccc;			
+	color: black;
+	border-bottom:1px solid #fff;
+      font-size: 11pt;
+      font-weight: bold;
+
+}			      
+
+	table.two tr {	
+	height: 1em;
+}
+  table.two tr:nth-child(1) {      
+    font-size: 13pt;
+    font-weight: bold;
+  }
+	table.two tr:nth-child(2n) {			
+    background-color: #eee;		}
+
+	table.two tr:nth-child(2n+1) {			
+	background-color:#fff;		}
+
+table.three {									 
+	margin-bottom: 3em;	
+	border-collapse:collapse;
+	display: inline-block;
+}	
+
+	
+table.three td {								
+	text-align: left;     
+	width: 80em;					
+	padding: 0.5em; 
+	border-top : 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}		
+
+table.three th {		
+  font-family: 'Nanum Gothic', serif;
+  width: 25em;
+	text-align: center;					
+	padding: 1em;
+	background-color: #c1c1c1;			
+	color: black;
+	border-top : 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}			      
+
+table.three tr {	
+	height: 1em;
+}
+
+table.three tr:nth-child(odd) {			
+	background-color:#fff;		}
